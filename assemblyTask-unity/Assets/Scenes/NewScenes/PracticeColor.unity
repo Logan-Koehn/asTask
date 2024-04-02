@@ -1613,7 +1613,7 @@ MonoBehaviour:
   hands:
   - {fileID: 2141832735}
   - {fileID: 273286243}
-  isAdaptive: 1
+  isAdaptive: 0
   button: {fileID: 547383365}
   instructionsAreSeperated: 0
   cross: {fileID: 8732195396968413222, guid: a5eb2f2b4e0146841b459e6f2d815af1, type: 3}

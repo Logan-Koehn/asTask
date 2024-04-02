@@ -1703,7 +1703,7 @@ MonoBehaviour:
   hands:
   - {fileID: 2141832735}
   - {fileID: 273286243}
-  isAdaptive: 1
+  isAdaptive: 0
   button: {fileID: 547383365}
   instructionsAreSeperated: 0
   cross: {fileID: 0}
@@ -1719,7 +1719,7 @@ PrefabInstance:
     - target: {fileID: 177142786500978013, guid: acb13466d1f8c9947a574c60515ccb46,
         type: 3}
       propertyPath: m_Radius
-      value: 0.008
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 845585598375754046, guid: acb13466d1f8c9947a574c60515ccb46,
         type: 3}
@@ -1739,7 +1739,7 @@ PrefabInstance:
     - target: {fileID: 944328207436415997, guid: acb13466d1f8c9947a574c60515ccb46,
         type: 3}
       propertyPath: m_Radius
-      value: 0.008
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 1059901096861065252, guid: acb13466d1f8c9947a574c60515ccb46,
         type: 3}
@@ -1769,7 +1769,7 @@ PrefabInstance:
     - target: {fileID: 2134874939453771535, guid: acb13466d1f8c9947a574c60515ccb46,
         type: 3}
       propertyPath: m_Radius
-      value: 0.008
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 2271147611267378593, guid: acb13466d1f8c9947a574c60515ccb46,
         type: 3}
@@ -1829,7 +1829,7 @@ PrefabInstance:
     - target: {fileID: 3708407036356796886, guid: acb13466d1f8c9947a574c60515ccb46,
         type: 3}
       propertyPath: m_Radius
-      value: 0.008
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 5218769880790510900, guid: acb13466d1f8c9947a574c60515ccb46,
         type: 3}
@@ -1899,7 +1899,7 @@ PrefabInstance:
     - target: {fileID: 9042238706268760246, guid: acb13466d1f8c9947a574c60515ccb46,
         type: 3}
       propertyPath: m_Radius
-      value: 0.007
+      value: 0.005
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

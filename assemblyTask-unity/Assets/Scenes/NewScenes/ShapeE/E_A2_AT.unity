@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.23089361, g: 0.6025145, b: 0.9881196, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1612,7 +1612,7 @@ MonoBehaviour:
   hands:
   - {fileID: 581672430}
   - {fileID: 581672429}
-  isAdaptive: 1
+  isAdaptive: 0
   button: {fileID: 547383365}
   instructionsAreSeperated: 0
   cross: {fileID: 0}
