@@ -1739,7 +1739,7 @@ MonoBehaviour:
   hands:
   - {fileID: 581672430}
   - {fileID: 581672429}
-  isAdaptive: 1
+  isAdaptive: 0
   button: {fileID: 547383365}
   instructionsAreSeperated: 0
   cross: {fileID: 0}
