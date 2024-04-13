@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.XR;
 using VRQuestionnaireToolkit;
+using TMPro;
 
 public class SceneDirector : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class SceneDirector : MonoBehaviour
     public int trialNumber = 1;
     public int shapeNumber = 1;
     public bool firstWait = true;
+    public TMP_FontAsset[] availableFonts;
     private void Awake()
     {
 
@@ -37,6 +39,7 @@ public class SceneDirector : MonoBehaviour
             instance = this;
         }
         expLog = instance.GetComponent<ExperimentLog>();
+        loadFonts();   
     }
 
 
@@ -186,6 +189,34 @@ public class SceneDirector : MonoBehaviour
                 LoadSceneByName("H_S2_AT");
             }
         }
+        // Font changing (F plus 1 - 6 changes the font globally
+        if (Input.GetKey(KeyCode.F))
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                changeFont("LiberationSans SDF");   
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                changeFont("EBGaramond SDF");
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                changeFont("Montserrat SDF");
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                changeFont("NotoSans SDF");
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha5))
+            {
+                changeFont("Roboto-Regular SDF");
+            }
+            else if (Input.GetKeyDown(KeyCode.Alpha6))
+            {
+                changeFont("times new roman SDF");
+            }
+        }
 
         if (Input.GetKeyDown(KeyCode.R))
         {
@@ -326,6 +357,30 @@ public class SceneDirector : MonoBehaviour
         trialNumber++;
         SceneManager.LoadScene(tempSceneName);
     }
+
+    // Font Management
+    public void loadFonts()
+    {
+        availableFonts = Resources.LoadAll<TMP_FontAsset>("Fonts & Materials");
+    }
+    public void changeFont(string selectedFont)
+    {
+        TMP_FontAsset newFont = null;
+        foreach (TMP_FontAsset font in availableFonts)
+        {
+            if (font.name == selectedFont)
+            {
+                newFont = font;
+                break;
+            }
+        }
+        TMP_Text[] allText = FindObjectsOfType<TMP_Text>();
+        foreach (TMP_Text text in allText)
+        {
+            text.font = newFont;
+        }
+    }
+
     public void quit()
     {
 #if UNITY_EDITOR
@@ -342,6 +397,4 @@ public class SceneDirector : MonoBehaviour
         string[] splitSceneName = sceneName.Split('_');
         return splitSceneName[0];
     }
-
-
 }
