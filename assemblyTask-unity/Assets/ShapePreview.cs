@@ -10,7 +10,6 @@ public class ShapePreview : MonoBehaviour
 
     public bool considerColor = false;
     public bool isPreview = false;
-    public Material white;
 
 
     // Start is called before the first frame update
@@ -92,7 +91,6 @@ public class ShapePreview : MonoBehaviour
             if (propCheck1 != null)
             {
                 propCheck1.color = null;
-                child.GetComponent<MeshRenderer>().material = white;
             }
 
             // Recursively set color to null for children's children
