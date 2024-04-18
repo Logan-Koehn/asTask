@@ -39,7 +39,7 @@ public class SceneDirector : MonoBehaviour
             instance = this;
         }
         expLog = instance.GetComponent<ExperimentLog>();
-        loadFonts();   
+        LoadFonts();   
     }
 
 
@@ -194,27 +194,27 @@ public class SceneDirector : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-                changeFont("LiberationSans SDF");   
+                ChangeFont("LiberationSans SDF");   
             }
             else if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                changeFont("EBGaramond SDF");
+                ChangeFont("EBGaramond SDF");
             }
             else if (Input.GetKeyDown(KeyCode.Alpha3))
             {
-                changeFont("Montserrat SDF");
+                ChangeFont("Montserrat SDF");
             }
             else if (Input.GetKeyDown(KeyCode.Alpha4))
             {
-                changeFont("NotoSans SDF");
+                ChangeFont("NotoSans SDF");
             }
             else if (Input.GetKeyDown(KeyCode.Alpha5))
             {
-                changeFont("Roboto-Regular SDF");
+                ChangeFont("Roboto-Regular SDF");
             }
             else if (Input.GetKeyDown(KeyCode.Alpha6))
             {
-                changeFont("times new roman SDF");
+                ChangeFont("times new roman SDF");
             }
         }
 
@@ -359,11 +359,11 @@ public class SceneDirector : MonoBehaviour
     }
 
     // Font Management
-    public void loadFonts()
+    public void LoadFonts()
     {
         availableFonts = Resources.LoadAll<TMP_FontAsset>("Fonts & Materials");
     }
-    public void changeFont(string selectedFont)
+    public void ChangeFont(string selectedFont)
     {
         TMP_FontAsset newFont = null;
         foreach (TMP_FontAsset font in availableFonts)
