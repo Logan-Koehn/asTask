@@ -22,7 +22,9 @@ public class SceneDirector : MonoBehaviour
     public int trialNumber = 1;
     public int shapeNumber = 1;
     public bool firstWait = true;
+
     public TMP_FontAsset[] availableFonts;
+    public bool increaseSize;
     private void Awake()
     {
 
@@ -189,7 +191,7 @@ public class SceneDirector : MonoBehaviour
                 LoadSceneByName("H_S2_AT");
             }
         }
-        // Font changing (F plus 1 - 6 changes the font globally
+        // Font changing (F plus 1 - 6 changes the font globally) (F plus up arrow increases size and vice versa)
         if (Input.GetKey(KeyCode.F))
         {
             if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -215,6 +217,16 @@ public class SceneDirector : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.Alpha6))
             {
                 ChangeFont("times new roman SDF");
+            }
+            else if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                increaseSize = true;
+                ChangeFontSize();
+            }
+            else if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                increaseSize = false;
+                ChangeFontSize();
             }
         }
 
@@ -378,6 +390,31 @@ public class SceneDirector : MonoBehaviour
         foreach (TMP_Text text in allText)
         {
             text.font = newFont;
+        }
+    }
+    public void ChangeFontSize()
+    {
+        TMP_Text text = GameObject.Find("InstructionPanel").GetComponent<TMP_Text>();
+        // Handle NullReferenceException
+        if (text == null)
+        {
+            Debug.LogError("TMP component not found");
+        }
+        // Increase size
+        if (increaseSize)
+        {
+            if (text.fontSize < 20f)
+            {
+                text.fontSize += .5f;
+            }
+        }
+        // Decrease size
+        else
+        {
+            if (text.fontSize > .5f)
+            {
+                text.fontSize -= .5f;
+            }
         }
     }
 
