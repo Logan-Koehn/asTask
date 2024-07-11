@@ -211,6 +211,29 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6362564846645090700, guid: 29bccb021597e414b8d4000b3a67e27b,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 984cfd12c51a9444c9fcb10a37abb43c,
+        type: 2}
+    - target: {fileID: 6362564846645090700, guid: 29bccb021597e414b8d4000b3a67e27b,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 5818351976021417085, guid: 984cfd12c51a9444c9fcb10a37abb43c,
+        type: 2}
+    - target: {fileID: 6362564846645090700, guid: 29bccb021597e414b8d4000b3a67e27b,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491204564256135699, guid: 29bccb021597e414b8d4000b3a67e27b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 5818351976021417085, guid: 984cfd12c51a9444c9fcb10a37abb43c,
+        type: 2}
     m_RemovedComponents:
     - {fileID: 1622556446396220707, guid: 29bccb021597e414b8d4000b3a67e27b, type: 3}
     m_RemovedGameObjects: []
@@ -1930,6 +1953,7 @@ MonoBehaviour:
   button: {fileID: 547383365}
   instructionsAreSeperated: 1
   cross: {fileID: 0}
+  fadingMaterial: {fileID: 0}
   builtBars: []
 --- !u!1 &3954116125970588551 stripped
 GameObject:
