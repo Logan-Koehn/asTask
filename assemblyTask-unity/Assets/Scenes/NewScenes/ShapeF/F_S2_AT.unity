@@ -234,10 +234,35 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 6362564846645090700, guid: 29bccb021597e414b8d4000b3a67e27b,
         type: 3}
+      propertyPath: m_fontColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362564846645090700, guid: 29bccb021597e414b8d4000b3a67e27b,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.509434
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362564846645090700, guid: 29bccb021597e414b8d4000b3a67e27b,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.509434
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362564846645090700, guid: 29bccb021597e414b8d4000b3a67e27b,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.509434
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362564846645090700, guid: 29bccb021597e414b8d4000b3a67e27b,
+        type: 3}
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 5818351976021417085, guid: 984cfd12c51a9444c9fcb10a37abb43c,
         type: 2}
+    - target: {fileID: 6362564846645090700, guid: 29bccb021597e414b8d4000b3a67e27b,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4286743170
+      objectReference: {fileID: 0}
     - target: {fileID: 6362564846645090700, guid: 29bccb021597e414b8d4000b3a67e27b,
         type: 3}
       propertyPath: m_hasFontAssetChanged
@@ -1713,26 +1738,11 @@ MonoBehaviour:
   - {fileID: 2051127345}
   - {fileID: 2051127344}
   instructionTexts:
-  - 1. You will need to find a bar that is large in size, and then count to the fourth
-    hole along the bar. The next step is to align the fourth hole of the bar with
-    the second hole of the previous bar, and then join the two bars together in that
-    spot.
-  - 2. You will need to find a bar that is medium in size, and then count to the
-    fourth hole along the bar. The next step is to align the fourth hole of the bar
-    with the sixth hole of the previous bar, and then join the two bars together
-    in that spot.
-  - 3. You will need to find a bar that is small in size, and then count to the first
-    hole along the bar. The next step is to align the first hole of the bar with
-    the fifth hole of the previous bar, and then join the two bars together in that
-    spot.
-  - 4. You will need to find a bar that is large in size, and then count to the sixth
-    hole along the bar. The next step is to align the sixth hole of the bar with
-    the third hole of the previous bar, and then join the two bars together in that
-    spot.
-  - 5. You will need to find a bar that is medium in size, and then count to the
-    first hole along the bar. The next step is to align the first hole of the bar
-    with the seventh hole of the previous bar, and then join the two bars together
-    in that spot.
+  - 1. Connect a large bar hole 4 to the previous bar hole 2.
+  - 2. Connect a medium bar hole 4 to the previous bar hole 6.
+  - 3. Connect a small bar hole 1 to the previous bar hole 5.
+  - 4. Connect a large bar hole 6 to the previous bar hole 3.
+  - "5. Connect a medium bar hole 1 to the previous bar hole 7.\_"
   previewBars:
   - {fileID: 1685822407}
   - {fileID: 1685822406}
