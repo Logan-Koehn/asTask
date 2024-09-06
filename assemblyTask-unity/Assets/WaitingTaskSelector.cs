@@ -31,7 +31,7 @@ public class WaitingTaskSelector : MonoBehaviour
         }
         else
         {
-            instructionText.text = "Please take apart this shape before you. Put them in the transparent cube on the side.";
+            instructionText.text = "Please take apart this shape before you and place the bars into the transparent cube on your left.";
         }
         foreach (GameObject obj in normalObjects) // This is used to toggle the objects that are used in the normal task.
         {
