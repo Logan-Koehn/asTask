@@ -41,7 +41,6 @@ public class ShapePreview : MonoBehaviour
 
         if (isPreview)
             DisableAllColliders(this.transform);
-
         // if (!isPreview)
         //    DisableAllTextMeshPro(this.transform);
     }

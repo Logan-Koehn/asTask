@@ -156,6 +156,11 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 581672428}
+    - target: {fileID: 4285429961050902583, guid: 29bccb021597e414b8d4000b3a67e27b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4435789568391469540, guid: 29bccb021597e414b8d4000b3a67e27b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1246,6 +1251,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShapeE
       objectReference: {fileID: 0}
+    - target: {fileID: 2353259571298654198, guid: c724acb3920a8874d87b4bb2571ad228,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2590463819084685317, guid: c724acb3920a8874d87b4bb2571ad228,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1646,6 +1656,7 @@ MonoBehaviour:
   button: {fileID: 547383365}
   instructionsAreSeperated: 0
   cross: {fileID: 0}
+  fadingMaterial: {fileID: 0}
   builtBars: []
 --- !u!1 &3954116125970588551 stripped
 GameObject:

@@ -353,7 +353,7 @@ public class invisiBuild : MonoBehaviour
             inst.mistakes++;
             inst.SetTempText();
             inst.builtShape.SetActive(true);
-            inst.builtShape.transform.GetChild(1).gameObject.SetActive(true);
+            //inst.builtShape.transform.GetChild(1).gameObject.SetActive(true);
             inst.stepPanel.SetActive(false);
             manager.GetComponent<ExperimentLog>().AddData(this.gameObject.name, "Error", inst.currentStep.ToString(), errortype);
             inst.FadeInCorrectBar();
@@ -370,7 +370,7 @@ public class invisiBuild : MonoBehaviour
             inst.mistakes++;
             inst.SetTempText();
             inst.builtShape.SetActive(true);
-            inst.builtShape.transform.GetChild(1).gameObject.SetActive(true);
+            //inst.builtShape.transform.GetChild(1).gameObject.SetActive(true);
             inst.stepPanel.SetActive(false);
             manager.GetComponent<ExperimentLog>().AddData(this.gameObject.name, "Error", inst.currentStep.ToString(), errortype);
             if (!crossSpawned)
