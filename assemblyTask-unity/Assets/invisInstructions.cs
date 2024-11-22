@@ -284,7 +284,7 @@ public class invisInstructions : MonoBehaviour
             WideDataLog();
             toggleHands(false);
             button.SetActive(true);
-            //StartCoroutine(disableShape());
+            StartCoroutine(disableShape());
         }
     }
 
